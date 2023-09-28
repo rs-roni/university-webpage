@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+a{
+    text-decoration: none;
+}
+
+.containar{
+    width: 100vw;
+    height: 100vh;
+    background:linear-gradient(rgba(0, 0, 0,.5),rgba(0, 0, 0,.5)), url(./image/bg.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
+.top{
+    height:100px;
+    width: 100vw;
+    /* opacity: 70%; */
+    background-color:rgba(9, 243, 60, 0.8);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 150px;
+}
+
+.logo-area{
+    width: 20%;
+}
+
+.logo-area a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area a img{
+    width: 150px;
+    height: 50px;
+    transition: 0.3s ease-in;
+}
+
+.logo-area a img:hover{
+    width: 180px;
+    height: 75px;
+}
+
+.logo-area a h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    margin-left: 15px;
+    padding: 15px;
+    transition-delay: .2s;
+}
+
+.logo-area a h1:hover{
+    color: #100ce2;
+}
+
+.menu-area ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-area ul li{
+    list-style: none;
+    padding:15px;
+    margin: 0 25px;
+}
+
+.menu-area ul li a{
+    position: relative;
+}
+
+.menu-area ul li ::after{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    bottom:-5px;
+    left: 0;
+    background-color: #1735e2;
+    transition: .6s all ease-in-out;
+}
+
+.menu-area ul li :hover:after{
+    width: 100%;
+}
+
+.menu-area ul li a{
+    text-transform: uppercase;
+    color: #9506e7;
+    font-size: 1.3em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: .3s ease in out;
+}
+
+.menu-area ul li a:hover{
+    color: #1735e2;
+}
+
+
+.info{
+    width: 100%;
+   text-align: center;
+   position: absolute;
+   top: 50%;
+}
+
+.info h2{
+    font-family: lato;
+    font-size: 3.2em;
+    color: white;
+}
+.info p{
+    font-family: lato;
+    font-size: 20px;
+    color: white;
+}
+
+.btn button{
+    background: #100ce2;
+    border: none;
+    border-radius: 15px;
+}
+
+.btn a{
+    font-size: 1.3rem;
+    color: #d0d2db;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease-in-out;
+    
+}
+
+
+
+.btn a:hover{
+    background-color: white;
+    color: #1735e2;
+    width: 30px;
+    border-radius: 25px;
+}
